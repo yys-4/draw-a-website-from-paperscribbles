@@ -19,7 +19,7 @@ app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB per image
 
 # Initialize the Vertex AI client library.
-vertexai.init(project="trusty-art-420814", location="us-central1")
+vertexai.init(project="", location="")
 
 # Define a function to generate response from a wireframe and a prompt.
 def generate(wireframe, model, prompt):
